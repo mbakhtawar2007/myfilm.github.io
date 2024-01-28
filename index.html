@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100vw;
+            height: 600px;
+            /* background-color: black; */
+        }
+
+        .background {
+            height: 100%;
+            width: 100%;
+            background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/9134db96-10d6-4a64-a619-a21da22f8999/e1a226fa-a69c-4bb8-a028-57187cc2d894/PK-en-20240115-trifectadaily-perspective_alpha_website_small.jpg");
+            background-size: cover;
+
+
+        }
+
+        .navbar {
+            padding-top: 1%;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            justify-content: space-around;
+            /* padding: 5%; */
+            /* align-content: center; */
+            /* background-color: white; */
+        }
+
+        .navtext {
+            color: rgb(229, 9, 20);
+            font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+            font-size: 20pt;
+        }
+
+        .navbtn button {
+            background-color: rgb(229, 9, 20);
+            padding: 3px;
+            border: none;
+            border-radius: 2px;
+            color: white;
+        }
+
+        .part1sec2 {
+
+            justify-content: center;
+            color: white;
+            font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+        }
+
+        .part2-1-1 {
+            font-size: 30pt;
+            /* color: white; */
+            margin-top: 10%;
+        }
+
+        .part2-1-2 {
+            margin-top: 1%;
+        }
+
+
+
+        .part2-2-1 {
+            margin-top: 1%;
+        }
+
+        .part2-2-2 input {
+          height: 8vh;
+          width: 30vw;
+          margin-right: 8px;
+          padding-left: 5%;
+          outline: none;
+        }
+
+        .part2-2-3 button {
+            height: 8vh;
+            width: 10vw;
+            background-color: rgb(229, 9, 20);
+            color: white;
+            border: none;
+            font-size: 10pt;
+        }
+
+        .part1input {
+           display: flex;
+           border: 1px solid;
+           justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="background">
+
+            <div class="navbar">
+
+                <div class="navtext"><b>NETFLIX</b></div>
+                <div class="navbtn"><button>Sign In</button></div>
+
+            </div>
+
+            <center>
+
+                <div class="part1sec2">
+
+
+                    <p class="part2-1-1"><b>Unlimited movies, TV shows, and more</b></p>
+                    <p class="part2-1-2">Watch anywhere. Cancel anytime.</p>
+
+
+
+
+                    <p class="part2-2-1">Ready to watch? Enter your email to create or restart your membership.</p>
+                    <div class="part1input">
+                        <p class="part2-2-2"><input type="text" placeholder="Email Address"></p>
+                        <p class="part2-2-3"><button> <b>Get Started ></b> </button></p>
+                    </div>
+
+
+                </div>
+
+            </center>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
