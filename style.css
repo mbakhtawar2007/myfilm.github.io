@@ -82,3 +82,20 @@ font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
   margin-top: 1%;
   font-size: 15pt;
 }
+.input{
+  display: flex;
+  justify-content: center;
+  border: none;
+  border-radius: 2px;
+background-color: rebeccapurple;
+}
+.email{
+  margin-right: 2px;
+  height: 70px;
+  width: 150px;
+}
+.btn{
+  margin-left: 2px;
+  height: 100px;
+  width: 150px;
+}
