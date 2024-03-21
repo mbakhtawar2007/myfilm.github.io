@@ -114,5 +114,18 @@ margin-top: 1.5%;
   margin-bottom: 7px;
   width: 100%;
   height: 450px;
+  display: flex;
+  background-color: black;
+}
+.sec2-1{
+  width: 50%;
+  height: 200px;
+  /* display: flex; */
   background-color: aqua;
+}
+.sec2-2{
+  width: 50%;
+  height: 200px;
+  /* display: flex; */
+  background-color: azure;
 }
