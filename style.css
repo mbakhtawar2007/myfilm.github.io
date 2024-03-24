@@ -1,40 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
 
-*{
+/* *{
   margin: 0%; 
   padding: 0%;
-}
-body{
-  background-color: gray;
-}
-/* .container{
-  
 } */
+body {
+  background-color: gray;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  /* border: 5px solid red; */
+ 
+}
 .sec1{
-  position: absolute;
   width: 100vw;
   height: 700px;
   background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/4da5d2b1-1b22-498d-90c0-4d86701dffcc/2151f7fd-6774-492c-8821-99c3b23be48d/PK-en-20240129-popsignuptwoweeks-perspective_alpha_website_large.jpg");
-  /* background-size: cover; */
-  z-index: -2;
+  z-index: -50;
 
 }
 .opacity{
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 91.5%;
   background-color: black;
   opacity: 0.5;
   /* position: relative; */
-  z-index: -1;
+  z-index: 1;
 }
 .text{
   width: 100%;
   height: 100%;
-  
-  
- 
-  z-index: 1;
+  z-index: 50;
+
 }
 .navbar {
 padding-top: 1%;
@@ -65,6 +66,7 @@ color: white;
 .sec1text{
 color: white;
 font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+z-index: 16;
 
 
 }
@@ -113,19 +115,53 @@ margin-top: 1.5%;
   margin-top: 7px;
   margin-bottom: 7px;
   width: 100%;
-  height: 450px;
+  height: 600px;
   display: flex;
+   align-items: center;
+  justify-content: center;
   background-color: black;
 }
 .sec2-1{
-  width: 50%;
-  height: 200px;
-  /* display: flex; */
-  background-color: aqua;
+  width: 40%;
+  height: 70%;
+  padding-left: 5%;
+  padding-right: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* background-color: aqua; */
+  color: white;
+}
+
+.heading-sec2{
+  font-size: 50PX;
+  display: block;
+  /* float: left; */
+  /* margin-top: 5%; */
+  
+
+}
+.text-sec2{
+  font-size: 25px;
+  margin-top: -3%;
+  /* display: block; */
 }
 .sec2-2{
-  width: 50%;
-  height: 200px;
-  /* display: flex; */
-  background-color: azure;
+  width: 40%;
+  height: 70%;
+   /* background-color: azure; */
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
+.sec2-2-img{
+  width: 90%;
+  height: 95%;
+  position: relative;
+}
+/* .sec2-2-video{
+position: absolute;
+top: 51px;
+right: 0px;
+width: 555px;
+} */
