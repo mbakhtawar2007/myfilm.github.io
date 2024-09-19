@@ -1,0 +1,83 @@
+.faq-wrapper {
+    width: 100%;
+    padding: 50px 0;
+    background-color: #141414; /* Netflix dark background */
+}
+
+.faq-container {
+    background-color: #1c1c1c; /* Darker gray for container */
+    color: white;
+    width: 90%; /* 90% width of parent */
+    margin: 0 auto;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7); /* Darker shadow */
+    padding: 20px;
+}
+
+.faq-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #e50914; /* Netflix Red */
+    font-family: 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #333; /* Dark gray separator */
+    padding-bottom: 10px;
+}
+
+.faq-question {
+    width: 100%;
+    background-color: transparent;
+    color: #e50914; /* Netflix Red for questions */
+    padding: 15px 0;
+    font-size: 1.4rem;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.faq-question:hover {
+    color: #ff1a1a; /* Slightly brighter red on hover */
+}
+
+.faq-question::after {
+    content: '▼'; /* Down arrow */
+    font-size: 1rem;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease;
+    color: #e50914; /* Netflix Red arrow */
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    padding-left: 20px;
+    color: #e0e0e0; /* Light gray for answer text */
+}
+
+.faq-answer p {
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 10px 0;
+}
+
+.faq-answer.active {
+    max-height: 300px;
+}
+
+.faq-question.active::after {
+    transform: translateY(-50%) rotate(180deg); /* Rotate arrow when active */
+}

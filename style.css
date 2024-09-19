@@ -1,167 +1,125 @@
 @import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
 
-/* *{
-  margin: 0%; 
-  padding: 0%;
-} */
 body {
-  background-color: gray;
+  background-color: #141414;
   margin: 0;
   padding: 0;
+  font-family: 'Helvetica Neue', sans-serif;
 }
-.container {
-  width: 100%;
-  height: 100%;
-  /* border: 5px solid red; */
- 
-}
-.sec1{
+
+.sec1 {
   width: 100vw;
   height: 700px;
-  background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/4da5d2b1-1b22-498d-90c0-4d86701dffcc/2151f7fd-6774-492c-8821-99c3b23be48d/PK-en-20240129-popsignuptwoweeks-perspective_alpha_website_large.jpg");
-  z-index: -50;
+  position: relative;
+  overflow: hidden;
+}
 
-}
-.opacity{
+.sec1::before {
+  content: "";
   position: absolute;
-  width: 100%;
-  height: 91.5%;
-  background-color: black;
-  opacity: 0.5;
-  /* position: relative; */
-  z-index: 1;
-}
-.text{
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  z-index: 50;
-
+  background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/4da5d2b1-1b22-498d-90c0-4d86701dffcc/2151f7fd-6774-492c-8821-99c3b23be48d/PK-en-20240129-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.85; /* Increased opacity */
+  z-index: 1;
 }
+
+.text {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  color: white;
+  text-align: center;
+}
+
 .navbar {
-padding-top: 1%;
-width: 100vw;
-display: flex;
-justify-content: center;
-justify-content: space-around;
-/* padding: 5%; */
-/* align-content: center; */
-/* background-color: white; */
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 5%;
+  position: relative;
+  z-index: 2;
 }
 
 .navtext {
-color: rgb(229,9,20);
-/* font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif; */
-/* font-family: 'Exo 2', sans-serif; */
-font-family: 'Protest Revolution', sans-serif;
-font-size: 25pt;
+  color: #e50914;
+  font-family: 'Protest Revolution', sans-serif;
+  font-size: 25pt;
 }
 
-.navbtn button {
-background-color: rgb(229, 9, 20);
-padding: 8px;
-border: none;
-border-radius: 3px;
-color: white;
-}
-.sec1text{
-color: white;
-font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
-z-index: 16;
-
-
-}
-.text-heading{
-  font-size: 35pt;
-  margin-top: 15%;
-}
-
-.text-line-1{
-  margin-top: 2%;
-  font-size: 15pt;
-}
-.text-line-2{
-  margin-top: 1%;
-  font-size: 15pt;
-}
-.input{
-  display: flex;
-  justify-content: center;
-  /* border-radius: 2px; */
-/* background-color: rebeccapurple; */
-margin-top: 1.5%;
-}
-.email{
-  background-color: transparent;
-  margin-right: 3px;
-  /* margin-top: 6%; */
-  padding-left: 5px;
-  height: 50px;
-  width: 300px;
-  /* border: none */
-  border-radius: 5px;
-}
-.btn{
-  margin-left: 3px;
-  /* margin-top: 6%; */
-  height: 50px;
-  width: 150px;
-  padding: 5px;
-  color: white;
-  background-color: rgb(229, 9, 20);
+.navbtn .signin-btn {
+  background-color: #e50914;
+  padding: 10px 20px;
   border: none;
   border-radius: 5px;
-}
-.sec2{
-  margin-top: 7px;
-  margin-bottom: 7px;
-  width: 100%;
-  height: 600px;
-  display: flex;
-   align-items: center;
-  justify-content: center;
-  background-color: black;
-}
-.sec2-1{
-  width: 40%;
-  height: 70%;
-  padding-left: 5%;
-  padding-right: 5%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  /* background-color: aqua; */
   color: white;
+  font-size: 14pt;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.heading-sec2{
-  font-size: 50PX;
-  display: block;
-  /* float: left; */
-  /* margin-top: 5%; */
-  
+.navbtn .signin-btn:hover {
+  background-color: #ff4040;
+}
 
+.sec1text {
+  z-index: 2;
 }
-.text-sec2{
-  font-size: 25px;
-  margin-top: -3%;
-  /* display: block; */
+
+.text-heading {
+  font-size: 40pt;
+  margin-top: 15%;
+  font-weight: bold;
 }
-.sec2-2{
-  width: 40%;
-  height: 70%;
-   /* background-color: azure; */
-   display: flex;
-   align-items: center;
-   justify-content: center;
+
+.text-line-1,
+.text-line-2 {
+  font-size: 16pt;
+  margin-top: 1.5%;
 }
-.sec2-2-img{
-  width: 90%;
-  height: 95%;
-  position: relative;
+
+.input {
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
 }
-/* .sec2-2-video{
-position: absolute;
-top: 51px;
-right: 0px;
-width: 555px;
-} */
+
+.email {
+  height: 50px;
+  width: 300px;
+  padding-left: 15px;
+  border: 2px solid #333;
+  border-radius: 5px;
+  background-color: #1c1c1c;
+  color: white;
+  font-size: 14pt;
+}
+
+.email::placeholder {
+  color: #ccc;
+}
+
+.btn {
+  height: 50px;
+  width: 150px;
+  background-color: #e50914;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ff4040;
+}
+
+input,
+button {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

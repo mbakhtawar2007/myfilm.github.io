@@ -12,46 +12,42 @@
     integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./script.js">
+  <link rel="stylesheet" href="./FAQs.css">
+  <link rel="stylesheet" href="./sec2.css">
+  <link rel="stylesheet" href="./ContactInfo.css">
   <style></style>
 </head>
 
 <body>
   <div class="container">
     <div class="sec1">
-
       <div class="opacity"></div>
-
-      <div class="text" style="z-index: 50; position: relative;">
+      <div class="text">
         <div class="navbar">
           <div class="navtext"><b>NETFLIX</b></div>
           <div class="navbtn">
-            <button><b>Sign In</b></button>
+            <button class="signin-btn"><b>Sign In</b></button>
           </div>
         </div>
         <center>
           <div class="sec1text">
-            <p class="text-heading">
-              Unlimited movies, TV shows, and more
-            </p>
-            <p class="text-line-1">
-              Watch anywhere. Cancel anytime.
-            </p>
+            <p class="text-heading">Unlimited movies, TV shows, and more</p>
+            <p class="text-line-1">Watch anywhere. Cancel anytime.</p>
             <p class="text-line-2">
-
-              Ready to watch? Enter your email to create or restart your
-              membership.
+              Ready to watch? Enter your email to create or restart your membership.
             </p>
             <div class="input">
-              <div><input type="text" class="email" placeholder="Email address"></div>
-              <div><button class="btn">
-                  <h4>Get Started</h4>
-                </button></div>
+              <input type="text" class="email" placeholder="Email address">
+              <button class="btn">
+                <h4>Get Started</h4>
+              </button>
             </div>
           </div>
         </center>
       </div>
-
     </div>
+    
 
     <div class="sec2">
       <div class="sec2-1">
@@ -63,7 +59,63 @@
         <!-- <video src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v" autoplay loop muted class="sec2-2-video"></video> -->
       </div>
     </div>
+
+    <div class="faq-wrapper">
+      <div class="faq-container">
+          <h1 class="faq-title">Frequently Asked Questions</h1>
+          
+          <div class="faq-item">
+            <button class="faq-question">What is Netflix?</button>
+            <div class="faq-answer">
+              <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.</p>
+            </div>
+          </div>
+      
+          <div class="faq-item">
+            <button class="faq-question">How much does Netflix cost?</button>
+            <div class="faq-answer">
+              <p>Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from $8.99 to $17.99 a month.</p>
+            </div>
+          </div>
+      
+          <div class="faq-item">
+            <button class="faq-question">Where can I watch?</button>
+            <div class="faq-answer">
+              <p>Watch anywhere, anytime, on an unlimited number of devices. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app.</p>
+            </div>
+          </div>
+      </div>
+    </div>
+    
+    <section class="contact-info">
+      <div class="container">
+          <h2>Contact Us</h2>
+          <p>We’d love to hear from you. Reach out through the following channels:</p>
+          <div class="contact-details">
+              <div class="contact-item">
+                  <h3>Email</h3>
+                  <p>support@yourwebsite.com</p>
+              </div>
+              <div class="contact-item">
+                  <h3>Phone</h3>
+                  <p>+1 (123) 456-7890</p>
+              </div>
+              <div class="contact-item">
+                  <h3>Address</h3>
+                  <p>1234 Netflix Lane, Streaming City, SC 56789</p>
+              </div>
+          </div>
+          <button class="contact-button">Get in Touch</button>
+      </div>
+  </section>
+  
+
+  
+  
+    
   </div>
+  <script src="script.js"></script>
 </body>
 
 </html>
+

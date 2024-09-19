@@ -1,0 +1,68 @@
+.contact-info {
+    background-color: #1c1c1c;
+    color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.contact-info h2 {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    color: #e50914;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.contact-item {
+    background-color: #141414;
+    border-radius: 8px;
+    padding: 20px;
+    width: 200px;
+}
+
+.contact-item h3 {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    color: #e50914;
+    margin-bottom: 10px;
+}
+
+.contact-item p {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.contact-button {
+    background-color: #e50914;
+    color: #ffffff;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 8px;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-button:hover {
+    background-color: #d40813;
+    transform: scale(1.05);
+}
