@@ -1,16 +1,16 @@
 .faq-wrapper {
     width: 100%;
     padding: 50px 0;
-    background-color: #141414; /* Netflix dark background */
+    background-color: #141414;
 }
 
 .faq-container {
-    background-color: #1c1c1c; /* Darker gray for container */
+    background-color: #1c1c1c;
     color: white;
-    width: 90%; /* 90% width of parent */
+    width: 90%;
     margin: 0 auto;
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7); /* Darker shadow */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
     padding: 20px;
 }
 
@@ -18,7 +18,7 @@
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 40px;
-    color: #e50914; /* Netflix Red */
+    color: #e50914;
     font-family: 'Helvetica Neue', sans-serif;
     text-transform: uppercase;
     letter-spacing: 1.5px;
@@ -26,14 +26,14 @@
 
 .faq-item {
     margin-bottom: 20px;
-    border-bottom: 1px solid #333; /* Dark gray separator */
+    border-bottom: 1px solid #333;
     padding-bottom: 10px;
 }
 
 .faq-question {
     width: 100%;
     background-color: transparent;
-    color: #e50914; /* Netflix Red for questions */
+    color: #e50914;
     padding: 15px 0;
     font-size: 1.4rem;
     border: none;
@@ -46,26 +46,26 @@
 }
 
 .faq-question:hover {
-    color: #ff1a1a; /* Slightly brighter red on hover */
+    color: #ff1a1a;
 }
 
 .faq-question::after {
-    content: '▼'; /* Down arrow */
+    content: '▼';
     font-size: 1rem;
     position: absolute;
     right: 0;
     top: 50%;
     transform: translateY(-50%);
     transition: transform 0.3s ease;
-    color: #e50914; /* Netflix Red arrow */
+    color: #e50914;
 }
 
 .faq-answer {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.5s ease;
+    transition: max-height 0.3s ease;
     padding-left: 20px;
-    color: #e0e0e0; /* Light gray for answer text */
+    color: #e0e0e0;
 }
 
 .faq-answer p {
@@ -79,5 +79,102 @@
 }
 
 .faq-question.active::after {
-    transform: translateY(-50%) rotate(180deg); /* Rotate arrow when active */
+    transform: translateY(-50%) rotate(180deg);
+}
+
+/* Media Queries */
+@media (max-width: 480px) {
+    .faq-title {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+    }
+
+    .faq-question {
+        font-size: 1.2rem;
+        padding: 10px 0;
+    }
+
+    .faq-answer p {
+        font-size: 0.9rem;
+    }
+
+    .faq-container {
+        padding: 15px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .faq-title {
+        font-size: 2rem;
+        margin-bottom: 35px;
+    }
+
+    .faq-question {
+        font-size: 1.3rem;
+        padding: 12px 0;
+    }
+
+    .faq-answer p {
+        font-size: 1rem;
+    }
+
+    .faq-container {
+        padding: 20px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .faq-title {
+        font-size: 2.3rem;
+        margin-bottom: 40px;
+    }
+
+    .faq-question {
+        font-size: 1.4rem;
+        padding: 15px 0;
+    }
+
+    .faq-answer p {
+        font-size: 1rem;
+    }
+
+    .faq-container {
+        padding: 25px;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .faq-title {
+        font-size: 2.5rem;
+        margin-bottom: 40px;
+    }
+
+    .faq-question {
+        font-size: 1.4rem;
+        padding: 15px 0;
+    }
+
+    .faq-container {
+        padding: 30px;
+    }
+}
+
+@media (min-width: 1201px) {
+    .faq-title {
+        font-size: 2.8rem;
+        margin-bottom: 50px;
+    }
+
+    .faq-question {
+        font-size: 1.5rem;
+        padding: 20px 0;
+    }
+
+    .faq-answer p {
+        font-size: 1.1rem;
+    }
+
+    .faq-container {
+        padding: 40px;
+    }
 }

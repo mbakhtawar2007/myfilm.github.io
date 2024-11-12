@@ -1,5 +1,5 @@
 .contact-info {
-    background-color: #1c1c1c;
+    background: linear-gradient(180deg, #1c1c1c, #141414);
     color: #ffffff;
     padding: 40px;
     border-radius: 12px;
@@ -14,6 +14,7 @@
     font-weight: bold;
     color: #e50914;
     margin-bottom: 20px;
+    text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.4);
 }
 
 .contact-info p {
@@ -33,8 +34,14 @@
 .contact-item {
     background-color: #141414;
     border-radius: 8px;
-    padding: 20px;
+    padding: 25px;
     width: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
 }
 
 .contact-item h3 {
@@ -42,6 +49,7 @@
     font-weight: bold;
     color: #e50914;
     margin-bottom: 10px;
+    text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.4);
 }
 
 .contact-item p {
@@ -60,9 +68,79 @@
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0px 4px 10px rgba(229, 9, 20, 0.5);
 }
 
 .contact-button:hover {
     background-color: #d40813;
     transform: scale(1.05);
+}
+
+/* Media Queries */
+@media (max-width: 480px) {
+    .contact-info {
+        padding: 20px;
+    }
+
+    .contact-item {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .contact-button {
+        width: 100%;
+        padding: 12px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .contact-info {
+        padding: 30px;
+    }
+
+    .contact-item {
+        width: 45%;
+    }
+
+    .contact-button {
+        padding: 14px 20px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .contact-info {
+        padding: 40px;
+    }
+
+    .contact-item {
+        width: 200px;
+    }
+
+    .contact-button {
+        padding: 15px 25px;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .contact-info {
+        padding: 40px;
+    }
+
+    .contact-item {
+        width: 220px;
+    }
+}
+
+@media (min-width: 1201px) {
+    .contact-info {
+        padding: 50px;
+    }
+
+    .contact-item {
+        width: 250px;
+    }
+
+    .contact-button {
+        padding: 18px 30px;
+    }
 }
